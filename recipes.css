@@ -76,7 +76,6 @@ h1 img {
 #recipelist a,
 a.home-link {
 	display: inline-block;
-	border-bottom: 2px solid #f89b41;
 	transition: all .4s;
 	letter-spacing: 1px;
 	font-weight: 600;
@@ -85,7 +84,6 @@ a.home-link {
 #recipelist a:link,
 a.home-link:link {
 	color: #f89b41;
-	text-decoration: none;
 }
 
 #recipelist a:visited,
@@ -98,11 +96,11 @@ a.home-link:hover,
 #recipelist a:focus,
 a.home-link:focus {
 	color: #f3c26e;
-	border-bottom: 2px solid #f3c26e;
 }
 
 #recipes a.home-link {
 	font-weight: 400;
+	text-decoration: none;
 	border-bottom: 1px solid;
 }
 
@@ -117,6 +115,7 @@ a.home-link:focus {
 	list-style-type: none;
 	padding-left: 0;
 	margin: 6rem 2rem 4rem;
+	align-items:baseline;
 }
 
 #recipelist li {
@@ -226,6 +225,16 @@ a.home-link {
 	h2 {
 		margin-right: 4.7em;
 	}
+
+	#mobile,
+	.mobile {
+		display: inline;
+	}
+
+	#desktop,
+	.desktop {
+		display: none;
+	}
 }
 
 @media only screen and (max-width: 768px) {
@@ -242,15 +251,5 @@ a.home-link {
 
 	main {
 		padding-top: 1px;
-	}
-
-	#mobile,
-	.mobile {
-		display: inline;
-	}
-
-	#desktop,
-	.desktop {
-		display: none;
 	}
 }
